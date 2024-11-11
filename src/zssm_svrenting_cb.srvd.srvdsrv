@@ -1,0 +1,4 @@
+@EndUserText.label: 'Renting'
+define service Zssm_svrenting_cb {
+  expose z_i_renting;
+}

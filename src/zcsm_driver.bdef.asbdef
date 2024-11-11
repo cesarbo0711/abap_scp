@@ -1,0 +1,16 @@
+managed;// implementation in class zbp_csm_driver unique;
+//strict ( 2 );
+
+define behavior for ZCSM_DRIVER //alias <alias_name>
+persistent table ztsm_driver
+//late numbering
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+ // field ( readonly ) driver_id;
+  //field driver_id ;
+}
